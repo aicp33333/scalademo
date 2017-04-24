@@ -11,21 +11,19 @@ object Rddt {
 
   def main(args: Array[String]): Unit = {
 
-    val sparkSession = SparkSession.builder.master("local").appName("example").getOrCreate()
+//    val sparkSession = SparkSession.builder.master("local").appName("example").getOrCreate()
+//
+//    val sc =sparkSession.sparkContext
+//    sc.textFile("")
+//
+//    val rdd = sc.textFile("/Users/rongpei/file/ideaerror.txt").map(_.split(""))
+//    val rddStringToRowRDD =rdd.map(value => Row(value))
+//    val dfschema = StructType(Array(StructField("value",StringType)))
+//    val rddToDF = sparkSession.createDataFrame(rddStringToRowRDD,dfschema)
+//    val rDDToDataSet = rddToDF.as[String]
+//
+//    rDDToDataSet.toJavaRDD.rdd
 
-    val sc =sparkSession.sparkContext
-    sc.textFile("")
-
-    val rdd = sc.textFile("/Users/rongpei/file/ideaerror.txt").map(_.split(""))
-    val rddStringToRowRDD =rdd.map(value => Row(value))
-    val dfschema = StructType(Array(StructField("value",StringType)))
-    val rddToDF = sparkSession.createDataFrame(rddStringToRowRDD,dfschema)
-    val rDDToDataSet = rddToDF.as[String]
-
-    rDDToDataSet.toJavaRDD.rdd
-    val tttt = sc.textFile("hdfs://10.95.3.138:8020/user/licheng/yhgz/*/*/")
-
-    print(tttt.count())
 
 
   }
