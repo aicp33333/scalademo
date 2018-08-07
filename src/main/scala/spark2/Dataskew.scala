@@ -13,6 +13,7 @@ import scala.io.Source
   */
 object Dataskew {
 
+
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf().setAppName("Dataskew")
     val sc = new SparkContext("local", "Dataskew", conf)
@@ -119,8 +120,5 @@ object Dataskew {
 
 
     arr.foreach(print)
-
-
-
   }
 }

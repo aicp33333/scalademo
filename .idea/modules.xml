@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/scalademo.iml" filepath="$PROJECT_DIR$/scalademo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mavtest.iml" filepath="$PROJECT_DIR$/mavtest.iml" />
     </modules>
   </component>
 </project>

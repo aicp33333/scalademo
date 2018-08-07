@@ -5,8 +5,8 @@ package com.data
   */
 object CreateData {
 
+
   def main(args: Array[String]): Unit = {
-
+     print()
   }
-
 }

@@ -15,6 +15,7 @@ object test {
   def main(args: Array[String]): Unit = {
     val sparkSession = SparkSession.builder.master("local").appName("test").getOrCreate()
 
+
     val sc =sparkSession.sparkContext
     import sparkSession.implicits._
 
